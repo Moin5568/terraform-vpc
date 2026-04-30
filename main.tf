@@ -49,7 +49,7 @@ resource "aws_subnet" "public_subnet_2" {
 }
 
 ################################################################################
-# Database subnet
+# Database(Private) subnet
 ################################################################################
 
 resource "aws_subnet" "database_subnet_1" {
@@ -90,7 +90,7 @@ resource "aws_route" "public_internet_gateway" {
 }
 
 ################################################################################
-# Database route table
+# Database(Private) route table
 ################################################################################
 
 resource "aws_route_table" "database_route_table" {

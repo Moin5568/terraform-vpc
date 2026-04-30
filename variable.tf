@@ -10,7 +10,7 @@ variable "create_igw" {
   default     = null
 }
 variable "igw_tag" {
-  description = "Mention Tag needs to be associated with internet gateway"
+  description = "Mention Tags needs to be associated with internet gateway"
   type        = string
   default     = "tcw_igw"
 }
@@ -20,7 +20,7 @@ variable "public_route_table_tag" {
   default     = "tcw_public_route_table"
 }
 variable "database_route_table_tag" {
-  description = "Tage for database route table"
+  description = "Tag for database route table"
   type        = string
   default     = "tcw_database_route_table"
 }
@@ -41,7 +41,7 @@ variable "enable_dns_support" {
   default     = null
 }
 variable "enable_ipv6" {
-  description = "Requests an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block."
+  description = "Request an Amazon-provided IPv6 CIDR block with a /56 prefix length for the VPC. You cannot specify the range of IP addresses, or the size of the CIDR block."
   type        = bool
   default     = null
 }
